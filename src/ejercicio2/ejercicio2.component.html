@@ -1,0 +1,8 @@
+
+
+<mat-grid-list rowHeight="200px" cols="{{ imagesPerRow }}" class="overflow-hidden rounded-xl">
+  <mat-grid-tile *ngFor="let image of images" (click)="onImageClick(image)" class="cursor-pointer group">
+    <img src="{{ image.src }}" alt="{{ image.alt }}" class="w-full h-full object-cover group-hover:scale-110 group-hover:opacity-90 transition-transform duration-300">
+  </mat-grid-tile>
+</mat-grid-list>
+
